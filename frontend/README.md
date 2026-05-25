@@ -68,7 +68,7 @@ Celo usage vault deposit token:
 Celo ERC-8004 agent ID:
 
 ```text
-94
+9109
 ```
 
 Strategy Lab journal proofs are already configured against the live backend deployments. Local clones without `{MANTLE,CELO}_LANGCLAW_TRADING_JOURNAL_ADDRESS` still run backtests, but Proof Center will honestly show the journal as not configured.

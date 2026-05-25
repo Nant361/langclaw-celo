@@ -4,7 +4,7 @@ This document describes the Celo submission narrative. For the live eligibility 
 
 ## Track
 
-Langclaw targets the AI Alpha & Data path. Strategy Lab supports the demo with backtesting and paper-trade proof.
+Langclaw targets Proof of Ship through the AI Agents Prize Pool, with MiniPay Mini App as the supporting path. Its product narrative is AI Alpha & Data: Celo intelligence, explainable signals, watchlists, and on-chain agent proof. Strategy Lab supports the demo with backtesting and paper-trade proof.
 
 Langclaw is not a live-funds trading executor. It produces source-backed Celo intelligence, watchlist recommendations, Dune-backed strategy backtests, paper-trading orders, and verifiable on-chain proof.
 
@@ -23,6 +23,10 @@ Langclaw is a Celo-first AI intelligence and strategy agent that analyzes smart-
 | Insight value | Smart-money summaries, liquidity risk checks, protocol and yield watchlists, Alpha Watchlist signals, and source-backed confidence notes |
 | Strategy alpha | Celo Liquidity Momentum Strategy with Dune historical rows, equity curve, trade table, win rate, drawdown, deterministic paper orders, and journal proof status |
 
+## User Problem
+
+Celo builders, analysts, and MiniPay-facing teams need a fast way to screen Celo token and protocol signals before they add a watchlist item or share a call. The current workflow often splits on-chain rows, social context, risk checks, and proof records across separate tools. Langclaw turns that workflow into one Celo-focused agent run with source evidence, confidence notes, and an on-chain decision record.
+
 ## Current Celo Proof Layer
 
 | Item | Value |
@@ -34,6 +38,25 @@ Langclaw is a Celo-first AI intelligence and strategy agent that analyzes smart-
 | ERC-8004 identity registry | `0x8004A169FB4a3325136EB29fA0ceB6D2e539a432` |
 | Langclaw Celo ERC-8004 agent ID | `9109` |
 | Agent owner / recorder | `0x2cA915EF6be8D2D48ccD3c5dAF715546AF873A4c` |
+| Latest recorded decision | `#0` smart-money, tx `0x0e48bd059c782dd59a7834279388e0b2d305f9aba758c8fdb412e8eb55d2dc7d` |
+
+## Submission Readiness
+
+| Area | Status | Evidence |
+| --- | --- | --- |
+| Celo mainnet contracts | Ready | Registry, Trading Journal, and Usage Vault have Celo bytecode and verified explorer source |
+| AI agent proof | Ready for ERC-8004, pending Self Agent ID | ERC-8004 agent `9109`, registration tx `0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3`, latest decision proof `#0` |
+| MiniPay support | Code ready, capture pending | MiniPay detection, Celo mainnet lock, and USDT stablecoin credits are implemented. Mobile screenshots still need to be captured |
+| Talent App | Manual follow-up | Builder profile, project page, campaign enrollment, and leaderboard evidence must be confirmed in Talent App |
+| Reward claim | Manual follow-up | Project Leader must claim through MiniPay or the program fallback before the reward deadline |
+
+## Safety Policy
+
+- Langclaw does not execute live-funds trades.
+- Strategy Lab records backtests and paper trades only.
+- User wallet actions stay explicit.
+- Agent private keys stay in backend environment variables.
+- Signal output keeps false-positive checks visible before any recommendation.
 
 ## Signal Quality
 

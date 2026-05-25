@@ -299,9 +299,11 @@ async function anchorAgentDecision({
       args: [agentId, runId, decisionHash, evidenceUri, signalType],
       account,
     });
-    const txHash = await walletClient.writeContract(
-      withCeloFeeCurrency(chainConfig, request)
-    );
+    const txHash = await writeContractWithCeloFeeFallback({
+      chainConfig,
+      request,
+      walletClient: walletClient as unknown as WriteContractClient,
+    });
     const explorerUrl = `${explorerBase}/tx/${txHash}`;
     submittedTxHash = txHash;
     submittedExplorerUrl = explorerUrl;
@@ -472,9 +474,11 @@ async function recordErc8004ReputationFeedback({
       args: [agentId, 100n, 0, tag1, tag2, endpoint, evidenceUri, decisionHash],
       account: feedbackAccount,
     });
-    const txHash = await walletClient.writeContract(
-      withCeloFeeCurrency(chainConfig, request as Record<string, unknown>) as any
-    );
+    const txHash = await writeContractWithCeloFeeFallback({
+      chainConfig,
+      request: request as Record<string, unknown>,
+      walletClient: walletClient as unknown as WriteContractClient,
+    });
     submittedTxHash = txHash;
     submittedExplorerUrl = `${explorerBase}/tx/${txHash}`;
     const receipt = await waitForSubmittedTransactionReceipt({
@@ -707,6 +711,54 @@ function withCeloFeeCurrency<T extends Record<string, unknown>>(
     ...request,
     feeCurrency: chainConfig.billingCurrency.feeCurrencyAddress,
   } as T;
+}
+
+type WriteContractClient = {
+  writeContract: (request: Record<string, unknown>) => Promise<Hex>;
+};
+
+export async function writeContractWithCeloFeeFallback<T extends Record<string, unknown>>({
+  chainConfig,
+  request,
+  walletClient,
+}: {
+  chainConfig: ProductChainConfig;
+  request: T;
+  walletClient: WriteContractClient;
+}) {
+  const requestWithFeeCurrency = withCeloFeeCurrency(chainConfig, request);
+
+  try {
+    return await walletClient.writeContract(requestWithFeeCurrency);
+  } catch (error) {
+    if (
+      !shouldRetryWithoutCeloFeeCurrency(
+        chainConfig,
+        requestWithFeeCurrency,
+        error
+      )
+    ) {
+      throw error;
+    }
+
+    return walletClient.writeContract(request);
+  }
+}
+
+function shouldRetryWithoutCeloFeeCurrency(
+  chainConfig: ProductChainConfig,
+  request: Record<string, unknown>,
+  error: unknown
+) {
+  if (chainConfig.id !== "celo" || !("feeCurrency" in request)) {
+    return false;
+  }
+
+  const message = error instanceof Error ? error.message : String(error);
+
+  return /fee[-\s]?currency|gas required exceeds allowance|allowance \(0\)|insufficient.+fee/i.test(
+    message
+  );
 }
 
 function toBytes32Tag(value: string): Hex {
