@@ -31,7 +31,11 @@ const campaignProgressJune11Path = path.join(
 
 const sourceFiles = [
   { label: "README", path: readmePath },
-  { label: "CELO_ELIGIBILITY", path: eligibilityPath },
+  {
+    label: "CELO_ELIGIBILITY",
+    path: eligibilityPath,
+    extraClaims: ["2026-06-11 local eligibility and proof-readiness checks"],
+  },
   {
     label: "HACKATHON_SUBMISSION",
     path: hackathonSubmissionPath,
