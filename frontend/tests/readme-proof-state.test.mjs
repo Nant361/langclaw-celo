@@ -13,17 +13,22 @@ test("frontend README documents the latest proof run and ready semantics", () =>
 
   assert.match(
     source,
-    /Decision #47[\s\S]*campaign-backend-proof[\s\S]*Agent: 9109/,
+    /Decision #50[\s\S]*campaign-backend-proof[\s\S]*Agent: 9109/,
     "Expected the README to keep the latest ERC-8004 decision example."
   );
   assert.ok(
-    source.includes("github-backend-433b125-2026-06-08"),
+    source.includes("github-backend-a4ccbc1-2026-06-11"),
     "Expected the README to include the current public proof run id."
   );
   assert.match(
     source,
     /report `ready`[\s\S]*Self Agent ID `133` remains available/,
     "Expected the README to explain the preferred-agent ready semantics."
+  );
+  assert.match(
+    source,
+    /2026-06-11 backend proof-readiness (?:re)?check/,
+    "Expected the README to document the current June 11 proof-readiness check."
   );
   assert.match(
     source,
