@@ -31,6 +31,7 @@ const expectedClaims = [
   "frontend `/usage` flow approves USDT",
   "POST /api/usage/deposit/verify",
   "confirmed vault deposit event",
+  "git remote get-url origin",
 ];
 
 test("contracts README stays aligned with live public Celo proof references", () => {
