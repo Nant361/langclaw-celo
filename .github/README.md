@@ -61,7 +61,7 @@ https://langclawcelo.vercel.app
 - Latest documented Self-linked Celo decision proof: decision `#1`, signal
   `smart-money`, tx
   `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211`.
-- The 2026-06-10 backend proof-readiness pass reports `npm run
+- The 2026-06-11 backend proof-readiness pass reports `npm run
   check:celo-proof` now returns `ready` because the default proof path prefers
   the ERC-8004 campaign agent `9109`.
 - Self Agent ID `133` remains part of the public proof story for linked-proof

@@ -27,6 +27,7 @@ const expectedClaims = [
   "smart-money",
   "github-backend-433b125-2026-06-08",
   "https://github.com/Langclaw-AI-Celo/backend/commit/433b12562c6472dae9e3ff5a1286596a0420eaeb",
+  "2026-06-11 backend",
 ];
 
 const maintenanceReadmeClaims = [
