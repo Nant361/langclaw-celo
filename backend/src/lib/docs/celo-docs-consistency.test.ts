@@ -23,6 +23,11 @@ const campaignProgressJune10Path = path.join(
   "docs",
   "CAMPAIGN_PROGRESS_2026-06-10.md"
 );
+const campaignProgressJune11Path = path.join(
+  backendRoot,
+  "docs",
+  "CAMPAIGN_PROGRESS_2026-06-11.md"
+);
 
 const sourceFiles = [
   { label: "README", path: readmePath },
@@ -48,6 +53,17 @@ const sourceFiles = [
       "single-root local checkout",
       "github-backend-433b125-2026-06-08",
       "https://github.com/Langclaw-AI-Celo/backend/commit/433b12562c6472dae9e3ff5a1286596a0420eaeb",
+    ],
+  },
+  {
+    label: "CAMPAIGN_PROGRESS_2026-06-11",
+    path: campaignProgressJune11Path,
+    extraClaims: [
+      "Monorepo workspace",
+      "a4ccbc1",
+      "github-backend-433b125-2026-06-08",
+      "https://github.com/Langclaw-AI-Celo/backend/commit/433b12562c6472dae9e3ff5a1286596a0420eaeb",
+      "remote origin configured",
     ],
   },
 ];
