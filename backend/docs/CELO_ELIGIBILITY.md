@@ -34,7 +34,7 @@ monthly requirements and gives a repeatable command path for rechecking status.
 | Latest Celo decision proof | Decision `#50`, signal `campaign-backend-proof`, agent `9109`, tx `0x5a6dc627b49d11a37ae27e6a4c0c88aebee5d3942a643167657d9b63dec833ce` |
 | Latest Self-linked decision proof | Decision `#1`, signal `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
-The 2026-06-11 local eligibility and proof-readiness checks confirmed Celo
+The 2026-06-12 local eligibility and proof-readiness checks confirmed Celo
 mainnet connectivity, explorer verification, transaction status `1` for the
 ERC-8004 registration and Self Agent ID registration, plus a readable latest
 registry decision `#50` for agent `9109`.
