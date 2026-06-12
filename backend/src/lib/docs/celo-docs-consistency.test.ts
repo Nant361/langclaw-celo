@@ -34,7 +34,7 @@ const sourceFiles = [
   {
     label: "CELO_ELIGIBILITY",
     path: eligibilityPath,
-    extraClaims: ["2026-06-11 local eligibility and proof-readiness checks"],
+    extraClaims: ["2026-06-12 local eligibility and proof-readiness checks"],
   },
   {
     label: "HACKATHON_SUBMISSION",
