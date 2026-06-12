@@ -18,11 +18,6 @@ const smartContractNotesPath = path.join(
   "docs",
   "SMART_CONTRACT_TEAM_NOTES.md"
 );
-const campaignProgressJune11Path = path.join(
-  backendRoot,
-  "docs",
-  "CAMPAIGN_PROGRESS_2026-06-11.md"
-);
 const campaignProgressJune12Path = path.join(
   backendRoot,
   "docs",
@@ -44,19 +39,8 @@ const sourceFiles = [
     label: "SMART_CONTRACT_TEAM_NOTES",
     path: smartContractNotesPath,
     extraClaims: [
-      "github-backend-a4ccbc1-2026-06-11",
-      "https://github.com/Nant361/langclaw-celo/commit/a4ccbc182ee51ae99c9dec2d7dde7ad282c36ec7",
-    ],
-  },
-  {
-    label: "CAMPAIGN_PROGRESS_2026-06-11",
-    path: campaignProgressJune11Path,
-    extraClaims: [
-      "Monorepo workspace",
-      "a4ccbc1",
-      "github-backend-a4ccbc1-2026-06-11",
-      "https://github.com/Nant361/langclaw-celo/commit/a4ccbc182ee51ae99c9dec2d7dde7ad282c36ec7",
-      "remote origin configured",
+      "github-backend-8b683ec-2026-06-12",
+      "https://github.com/Nant361/langclaw-celo/commit/8b683ec76a296e05bca7994fb975c96908fa2dc2",
     ],
   },
   {
@@ -64,9 +48,9 @@ const sourceFiles = [
     path: campaignProgressJune12Path,
     extraClaims: [
       "Monorepo workspace",
-      "b2f9ffd",
-      "github-backend-a4ccbc1-2026-06-11",
-      "https://github.com/Nant361/langclaw-celo/commit/a4ccbc182ee51ae99c9dec2d7dde7ad282c36ec7",
+      "8b683ec",
+      "github-backend-8b683ec-2026-06-12",
+      "https://github.com/Nant361/langclaw-celo/commit/8b683ec76a296e05bca7994fb975c96908fa2dc2",
     ],
   },
 ];
@@ -82,9 +66,9 @@ const expectedClaims = [
   "133",
   "0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3",
   "0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6",
-  "0x5a6dc627b49d11a37ae27e6a4c0c88aebee5d3942a643167657d9b63dec833ce",
+  "0xf4123ad59aea08c3eea57155a2f0c6cb3164f25dca554ee7f747eec0b633d85f",
   "0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211",
-  "Decision `#50`",
+  "Decision `#51`",
   "campaign-backend-proof",
   "Decision `#1`",
   "smart-money",
