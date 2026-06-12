@@ -52,16 +52,16 @@ https://langclawcelo.vercel.app
   `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6`.
 - Proof contracts: `LangclawRegistry`, `LangclawTradingJournal`, and
   `LangclawUsageVault` are deployed on Celo.
-- Latest documented Celo decision proof: decision `#50`,
+- Latest documented Celo decision proof: decision `#51`,
   signal `campaign-backend-proof`, tx
-  `0x5a6dc627b49d11a37ae27e6a4c0c88aebee5d3942a643167657d9b63dec833ce`.
+  `0xf4123ad59aea08c3eea57155a2f0c6cb3164f25dca554ee7f747eec0b633d85f`.
 - Latest documented proof run:
-  `github-backend-a4ccbc1-2026-06-11`, evidence
-  `https://github.com/Nant361/langclaw-celo/commit/a4ccbc182ee51ae99c9dec2d7dde7ad282c36ec7`.
+  `github-backend-8b683ec-2026-06-12`, evidence
+  `https://github.com/Nant361/langclaw-celo/commit/8b683ec76a296e05bca7994fb975c96908fa2dc2`.
 - Latest documented Self-linked Celo decision proof: decision `#1`, signal
   `smart-money`, tx
   `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211`.
-- The 2026-06-11 backend proof-readiness pass reports `npm run
+- The 2026-06-12 backend proof-readiness pass reports `npm run
   check:celo-proof` now returns `ready` because the default proof path prefers
   the ERC-8004 campaign agent `9109`.
 - Self Agent ID `133` remains part of the public proof story for linked-proof

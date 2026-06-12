@@ -46,13 +46,13 @@ Live app: [langclawcelo.vercel.app](https://langclawcelo.vercel.app)
 | Self Agent ID | `133` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
 | Agent owner / recorder | `0x2cA915EF6be8D2D48ccD3c5dAF715546AF873A4c` |
-| Latest decision proof | Decision `#50`, signal `campaign-backend-proof`, tx `0x5a6dc627b49d11a37ae27e6a4c0c88aebee5d3942a643167657d9b63dec833ce` |
-| Latest decision proof run | `github-backend-a4ccbc1-2026-06-11` |
-| Latest decision proof evidence | `https://github.com/Nant361/langclaw-celo/commit/a4ccbc182ee51ae99c9dec2d7dde7ad282c36ec7` |
+| Latest decision proof | Decision `#51`, signal `campaign-backend-proof`, tx `0xf4123ad59aea08c3eea57155a2f0c6cb3164f25dca554ee7f747eec0b633d85f` |
+| Latest decision proof run | `github-backend-8b683ec-2026-06-12` |
+| Latest decision proof evidence | `https://github.com/Nant361/langclaw-celo/commit/8b683ec76a296e05bca7994fb975c96908fa2dc2` |
 | Latest Self-linked decision proof | Decision `#1`, signal `smart-money`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 The live Celo proof transactions above were rechecked in the
-2026-06-11 backend eligibility and proof-readiness pass. `npm run
+2026-06-12 backend eligibility and proof-readiness pass. `npm run
 check:celo-proof` now returns `ready` because the default proof path prefers
 the ERC-8004 campaign agent `9109`. Self Agent ID `133` remains part of the
 public proof story for linked-proof and human-verification flows. The
