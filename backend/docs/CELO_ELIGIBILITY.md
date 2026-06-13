@@ -31,13 +31,13 @@ monthly requirements and gives a repeatable command path for rechecking status.
 | Self Agent ID | `133` |
 | ERC-8004 registration tx | `0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
-| Latest Celo decision proof | Decision `#51`, signal `campaign-backend-proof`, agent `9109`, tx `0xf4123ad59aea08c3eea57155a2f0c6cb3164f25dca554ee7f747eec0b633d85f` |
+| Latest Celo decision proof | Decision `#53`, signal `campaign-contracts-proof`, agent `9109`, tx `0x807cc1b3c736438e4a48fc0bf1d4f8fa7236520a69b9e12ba0cd0a5338bf0006` |
 | Latest Self-linked decision proof | Decision `#1`, signal `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
-The 2026-06-12 local eligibility and proof-readiness checks confirmed Celo
+The 2026-06-13 local eligibility and proof-readiness checks confirmed Celo
 mainnet connectivity, explorer verification, transaction status `1` for the
 ERC-8004 registration and Self Agent ID registration, plus a readable latest
-registry decision `#51` for agent `9109`.
+registry decision `#53` for agent `9109`.
 
 ## Current Verification Status
 
