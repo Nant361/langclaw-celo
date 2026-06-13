@@ -6,7 +6,7 @@ This snapshot records the local repo-visible Langclaw Celo campaign state after 
 
 | Scope | Branch | Head |
 | --- | --- | --- |
-| Monorepo workspace | `main` | `1651d07` |
+| Monorepo workspace | `main` | `517f29e` |
 
 The public campaign surfaces continue to be tracked in the single git root repository. 
 
@@ -27,8 +27,8 @@ The public campaign surfaces continue to be tracked in the single git root repos
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
 | Latest ERC-8004 decision proof | Decision `#53`, signal `campaign-contracts-proof`, tx `0x807cc1b3c736438e4a48fc0bf1d4f8fa7236520a69b9e12ba0cd0a5338bf0006` |
 | Latest Self-linked decision proof | Decision `#1`, signal `smart-money`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
-| Latest ERC-8004 proof run | `github-backend-8b683ec-2026-06-12` |
-| Latest ERC-8004 proof evidence | `https://github.com/Nant361/langclaw-celo/commit/8b683ec76a296e05bca7994fb975c96908fa2dc2` |
+| Latest ERC-8004 proof run | `github-backend-517f29e-2026-06-13` |
+| Latest ERC-8004 proof evidence | `https://github.com/Nant361/langclaw-celo/commit/517f29e7b36f9a49bc5b4f8bf9823187e1ffbde9` |
 
 ## Eligibility and Proof Readiness Status
 
