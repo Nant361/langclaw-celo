@@ -29,7 +29,7 @@ const sourceFiles = [
   {
     label: "CELO_ELIGIBILITY",
     path: eligibilityPath,
-    extraClaims: ["2026-06-12 local eligibility and proof-readiness checks"],
+    extraClaims: ["2026-06-13 local eligibility and proof-readiness checks"],
   },
   {
     label: "HACKATHON_SUBMISSION",
@@ -66,10 +66,10 @@ const expectedClaims = [
   "133",
   "0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3",
   "0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6",
-  "0xf4123ad59aea08c3eea57155a2f0c6cb3164f25dca554ee7f747eec0b633d85f",
+  "0x807cc1b3c736438e4a48fc0bf1d4f8fa7236520a69b9e12ba0cd0a5338bf0006",
   "0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211",
-  "Decision `#51`",
-  "campaign-backend-proof",
+  "Decision `#53`",
+  "campaign-contracts-proof",
   "Decision `#1`",
   "smart-money",
 ];
