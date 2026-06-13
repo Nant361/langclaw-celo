@@ -8,7 +8,7 @@ This snapshot records the local repo-visible Langclaw Celo campaign state after 
 | --- | --- | --- |
 | Monorepo workspace | `main` | `84c71ce` |
 
-The public campaign surfaces continue to be tracked in the single git root repository. 
+The public campaign surfaces continue to be tracked in the single git root repository.
 
 ## Repo-Tracked Celo Proof References
 
