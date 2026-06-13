@@ -18,10 +18,10 @@ const smartContractNotesPath = path.join(
   "docs",
   "SMART_CONTRACT_TEAM_NOTES.md"
 );
-const campaignProgressJune12Path = path.join(
+const campaignProgressJune13Path = path.join(
   backendRoot,
   "docs",
-  "CAMPAIGN_PROGRESS_2026-06-12.md"
+  "CAMPAIGN_PROGRESS_2026-06-13.md"
 );
 
 const sourceFiles = [
@@ -44,8 +44,8 @@ const sourceFiles = [
     ],
   },
   {
-    label: "CAMPAIGN_PROGRESS_2026-06-12",
-    path: campaignProgressJune12Path,
+    label: "CAMPAIGN_PROGRESS_2026-06-13",
+    path: campaignProgressJune13Path,
     extraClaims: [
       "Monorepo workspace",
       "8b683ec",
