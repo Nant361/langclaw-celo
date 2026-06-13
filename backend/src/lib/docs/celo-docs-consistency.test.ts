@@ -39,8 +39,8 @@ const sourceFiles = [
     label: "SMART_CONTRACT_TEAM_NOTES",
     path: smartContractNotesPath,
     extraClaims: [
-      "github-backend-8b683ec-2026-06-12",
-      "https://github.com/Nant361/langclaw-celo/commit/8b683ec76a296e05bca7994fb975c96908fa2dc2",
+      "github-backend-517f29e-2026-06-13",
+      "https://github.com/Nant361/langclaw-celo/commit/517f29e7b36f9a49bc5b4f8bf9823187e1ffbde9",
     ],
   },
   {
@@ -48,9 +48,9 @@ const sourceFiles = [
     path: campaignProgressJune13Path,
     extraClaims: [
       "Monorepo workspace",
-      "8b683ec",
-      "github-backend-8b683ec-2026-06-12",
-      "https://github.com/Nant361/langclaw-celo/commit/8b683ec76a296e05bca7994fb975c96908fa2dc2",
+      "517f29e",
+      "github-backend-517f29e-2026-06-13",
+      "https://github.com/Nant361/langclaw-celo/commit/517f29e7b36f9a49bc5b4f8bf9823187e1ffbde9",
     ],
   },
 ];
