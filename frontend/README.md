@@ -176,17 +176,17 @@ Celo agent identity:
 Latest ERC-8004 Celo decision proof:
 
 ```text
-Decision #54
-Signal: campaign-backend-proof
+Decision #56
+Signal: campaign-contracts-proof
 Agent: 9109
-Tx: 0x74a33a31b80d6a7c4cdff4073d2a62c7f7d50b018bd5fb36d200bcad4e3d6b85
+Tx: 0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3
 ```
 
 Latest ERC-8004 proof run:
 
 ```text
-Run: github-backend-84c71ce-2026-06-13
-Evidence: https://github.com/Nant361/langclaw-celo/commit/84c71ceccc14470299004a20b071dd6d9d7f1f08
+Run: github-contracts-6a45563-2026-06-13
+Evidence: https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1
 ```
 
 Latest Self-linked Celo decision proof:
@@ -199,7 +199,7 @@ Tx: 0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211
 ```
 
 As of the 2026-06-13 backend proof-readiness recheck, the latest public Celo
-decision is now decision `#54` for ERC-8004 agent `9109`. Local clones now
+decision is now decision `#56` for ERC-8004 agent `9109`. Local clones now
 report `ready` when the preferred proof agent is the ERC-8004 campaign agent.
 Self Agent ID `133` remains available for linked-proof and human-verification
 flows without becoming the default campaign proof writer.

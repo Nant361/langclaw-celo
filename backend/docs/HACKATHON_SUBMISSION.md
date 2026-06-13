@@ -72,7 +72,7 @@ decision record.
 | Langclaw Self Agent ID | `133` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
 | Agent owner / recorder | `0x2cA915EF6be8D2D48ccD3c5dAF715546AF873A4c` |
-| Latest recorded decision | Decision `#54`, signal `campaign-backend-proof`, agent `9109`, tx `0x74a33a31b80d6a7c4cdff4073d2a62c7f7d50b018bd5fb36d200bcad4e3d6b85` |
+| Latest recorded decision | Decision `#56`, signal `campaign-contracts-proof`, agent `9109`, tx `0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3` |
 | Latest Self-linked decision | Decision `#1`, signal `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 ## Submission Readiness
@@ -81,7 +81,7 @@ decision record.
 | --- | --- | --- |
 | Celo mainnet contracts | Ready | Registry, Trading Journal, and USDT Usage Vault have Celo bytecode and verified explorer source |
 | AI agent identity | Ready | ERC-8004 agent `9109`, Self Agent ID `133`, and verified registration transactions |
-| On-chain agent proof | Ready | Latest registry decision `#54` is readable on Celo for agent `9109`; latest Self-linked decision remains `#1` for agent `133` |
+| On-chain agent proof | Ready | Latest registry decision `#56` is readable on Celo for agent `9109`; latest Self-linked decision remains `#1` for agent `133` |
 | MiniPay support | Code ready, media capture pending | MiniPay detection, Celo mainnet path, and USDT usage credits exist in frontend |
 | Talent/App campaign ops | Manual follow-up | Project page, campaign enrollment, and leaderboard evidence must be confirmed outside the repo |
 | Reward claim | Manual follow-up | Project Leader must claim through MiniPay or the program fallback before the reward deadline |
@@ -179,7 +179,7 @@ proof.
 3. It separates usable evidence from provider gaps instead of hiding missing
    sources.
 4. It records each AI decision hash on Celo through `LangclawRegistry`.
-5. The latest registry record is decision `#54`, `campaign-backend-proof`, for
+5. The latest registry record is decision `#56`, `campaign-contracts-proof`, for
    ERC-8004 agent `9109`, while the latest Self-linked decision remains record
    `#1` for agent `133`.
 6. Strong signals can be saved to Alpha Watchlist, while Proof Center shows

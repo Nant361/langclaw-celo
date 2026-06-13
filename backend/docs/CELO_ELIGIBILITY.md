@@ -31,13 +31,13 @@ monthly requirements and gives a repeatable command path for rechecking status.
 | Self Agent ID | `133` |
 | ERC-8004 registration tx | `0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
-| Latest Celo decision proof | Decision `#54`, signal `campaign-backend-proof`, agent `9109`, tx `0x74a33a31b80d6a7c4cdff4073d2a62c7f7d50b018bd5fb36d200bcad4e3d6b85` |
+| Latest Celo decision proof | Decision `#56`, signal `campaign-contracts-proof`, agent `9109`, tx `0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3` |
 | Latest Self-linked decision proof | Decision `#1`, signal `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 The 2026-06-13 local eligibility and proof-readiness checks confirmed Celo
 mainnet connectivity, explorer verification, transaction status `1` for the
 ERC-8004 registration and Self Agent ID registration, plus a readable latest
-registry decision `#54` for agent `9109`.
+registry decision `#56` for agent `9109`.
 
 ## Current Verification Status
 
@@ -49,8 +49,8 @@ registry decision `#54` for agent `9109`.
   `0x6e1f381458229e8d1ee66d2a0121d4017596b97d` remains verified for historical
   reference through `backend/verification/celo-legacy-vault/src/LangclawUsageVault.sol`.
 - `LangclawRegistry` currently exposes the documented ERC-8004 campaign proof
-  for agent `9109`: decision `#54`, signal `campaign-backend-proof`, tx
-  `0x74a33a31b80d6a7c4cdff4073d2a62c7f7d50b018bd5fb36d200bcad4e3d6b85`.
+  for agent `9109`: decision `#56`, signal `campaign-contracts-proof`, tx
+  `0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3`.
 - The latest Self-linked proof remains decision `#1`, signal `smart-money`, tx
   `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211`.
 - `npm run check:celo-proof` currently returns `ready` because the latest
