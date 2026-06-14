@@ -39,14 +39,14 @@ Latest registry records:
 
 | Record | Meaning |
 | --- | --- |
-| Decision `#56`, `campaign-contracts-proof`, agent `9109`, tx `0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3` | Latest Celo registry write as of 2026-06-13 |
+| Decision `#57`, `campaign-backend-proof`, agent `9109`, tx `0x14264d9fa68c19e57b5664ef2330c3169ceb33eddad3e9d5640d9c4d8b99cdb9` | Latest Celo registry write as of 2026-06-14 |
 | Decision `#1`, `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` | Latest Self-linked proof example used in product demos |
 
 Latest ERC-8004 decision run:
 
-- `github-contracts-6a45563-2026-06-13`
+- `github-frontend-1f50d27-2026-06-14`
 - Evidence URI:
-  `https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1`
+  `https://github.com/Nant361/langclaw-celo/commit/1f50d27547e14fd730096dcb1eedce88938e6341`
 - Default backend proof writes prefer `CELO_ERC8004_AGENT_ID=9109`.
 - Keep `CELO_SELF_AGENT_ID=133` for Self-linked proof and human-verification
   flows, not as the primary campaign proof writer.
