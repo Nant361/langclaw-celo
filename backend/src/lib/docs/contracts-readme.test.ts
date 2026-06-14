@@ -32,14 +32,14 @@ const expectedBaseClaims = [
 
 test("contracts README stays aligned with live public Celo proof references", () => {
   const source = readFileSync(contractsReadmePath, "utf8");
-  const isNew = source.includes("decision `#57`") || source.includes("Decision `#57`") || source.includes("decision `57`") || source.includes("decision #57") || source.includes("decision `57`") || source.includes("decision `57`") || source.includes("Registry decision `57`");
+  const isNew = source.includes("decision `#58`") || source.includes("Decision `#58`") || source.includes("decision `58`") || source.includes("decision #58") || source.includes("decision `58`") || source.includes("decision `58`") || source.includes("Registry decision `58`");
 
   const versionClaims = isNew
     ? [
-        "0x14264d9fa68c19e57b5664ef2330c3169ceb33eddad3e9d5640d9c4d8b99cdb9",
+        "0xe0cc1aa4f3d952c09496142cb933640d2f433102681a120c8554351ac9db59b4",
         "campaign-backend-proof",
-        "github-frontend-1f50d27-2026-06-14",
-        "https://github.com/Nant361/langclaw-celo/commit/1f50d27547e14fd730096dcb1eedce88938e6341",
+        "github-backend-6c16a0b-2026-06-14",
+        "https://github.com/Nant361/langclaw-celo/commit/6c16a0b64f4fd3cc3e479a3c6196d25d80d52bd8",
       ]
     : [
         "0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3",
