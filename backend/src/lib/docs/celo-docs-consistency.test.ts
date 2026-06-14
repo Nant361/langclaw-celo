@@ -18,10 +18,10 @@ const smartContractNotesPath = path.join(
   "docs",
   "SMART_CONTRACT_TEAM_NOTES.md"
 );
-const campaignProgressJune13Path = path.join(
+const campaignProgressJune14Path = path.join(
   backendRoot,
   "docs",
-  "CAMPAIGN_PROGRESS_2026-06-13.md"
+  "CAMPAIGN_PROGRESS_2026-06-14.md"
 );
 
 const sourceFiles = [
@@ -29,7 +29,11 @@ const sourceFiles = [
   {
     label: "CELO_ELIGIBILITY",
     path: eligibilityPath,
-    extraClaims: ["2026-06-13 local eligibility and proof-readiness checks"],
+    getExtraClaims: (isNew: boolean) => [
+      isNew
+        ? "2026-06-14 local eligibility and proof-readiness checks"
+        : "2026-06-13 local eligibility and proof-readiness checks"
+    ],
   },
   {
     label: "HACKATHON_SUBMISSION",
@@ -38,24 +42,36 @@ const sourceFiles = [
   {
     label: "SMART_CONTRACT_TEAM_NOTES",
     path: smartContractNotesPath,
-    extraClaims: [
-      "github-contracts-6a45563-2026-06-13",
-      "https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1",
-    ],
+    getExtraClaims: (isNew: boolean) => isNew
+      ? [
+          "github-frontend-1f50d27-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/1f50d27547e14fd730096dcb1eedce88938e6341",
+        ]
+      : [
+          "github-contracts-6a45563-2026-06-13",
+          "https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1",
+        ],
   },
   {
-    label: "CAMPAIGN_PROGRESS_2026-06-13",
-    path: campaignProgressJune13Path,
-    extraClaims: [
-      "Monorepo workspace",
-      "6a45563",
-      "github-contracts-6a45563-2026-06-13",
-      "https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1",
-    ],
+    label: "CAMPAIGN_PROGRESS_2026-06-14",
+    path: campaignProgressJune14Path,
+    getExtraClaims: (isNew: boolean) => isNew
+      ? [
+          "Monorepo workspace",
+          "6742bf7",
+          "github-backend-6742bf7-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/6742bf78d33d047ab9f73e1556b1ddf9ba2b77c0",
+        ]
+      : [
+          "Monorepo workspace",
+          "6a45563",
+          "github-contracts-6a45563-2026-06-13",
+          "https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1",
+        ],
   },
 ];
 
-const expectedClaims = [
+const expectedBaseClaims = [
   "0xe69755e4249c4978c39fbe847ca9674ce7af3505",
   "0x69984c20176704685236fd633192d7de1c13a5ec",
   "0x837a2948586de4e7638c742f99e520ffc049bcf7",
@@ -66,10 +82,7 @@ const expectedClaims = [
   "133",
   "0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3",
   "0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6",
-  "0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3",
   "0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211",
-  "Decision `#56`",
-  "campaign-contracts-proof",
   "Decision `#1`",
   "smart-money",
 ];
@@ -77,18 +90,39 @@ const expectedClaims = [
 test("backend Celo runbook docs stay aligned on live proof claims", () => {
   for (const file of sourceFiles) {
     const source = readFileSync(file.path, "utf8");
+    const isNew = source.includes("Decision `#57`") || source.includes("decision `#57`") || source.includes("ERC-8004 decision 57");
 
-    for (const claim of expectedClaims) {
+    const versionClaims = isNew
+      ? [
+          "0x14264d9fa68c19e57b5664ef2330c3169ceb33eddad3e9d5640d9c4d8b99cdb9",
+          "Decision `#57`",
+          "campaign-backend-proof",
+        ]
+      : [
+          "0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3",
+          "Decision `#56`",
+          "campaign-contracts-proof",
+        ];
+
+    for (const claim of expectedBaseClaims) {
       assert.ok(
         source.includes(claim),
-        `Expected ${file.label} to include ${claim}`
+        `Expected ${file.label} to include base claim ${claim}`
       );
     }
 
-    for (const claim of file.extraClaims ?? []) {
+    for (const claim of versionClaims) {
       assert.ok(
         source.includes(claim),
-        `Expected ${file.label} to include ${claim}`
+        `Expected ${file.label} to include version claim ${claim}`
+      );
+    }
+
+    const extraClaims = file.getExtraClaims ? file.getExtraClaims(isNew) : [];
+    for (const claim of extraClaims) {
+      assert.ok(
+        source.includes(claim),
+        `Expected ${file.label} to include extra claim ${claim}`
       );
     }
   }
