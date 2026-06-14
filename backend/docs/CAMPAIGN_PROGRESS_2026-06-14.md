@@ -6,7 +6,7 @@ This snapshot records the local repo-visible Langclaw Celo campaign state after 
 
 | Scope | Branch | Head |
 | --- | --- | --- |
-| Monorepo workspace | `main` | `6c16a0b` |
+| Monorepo workspace | `main` | `45cdee4` |
 
 The public campaign surfaces continue to be tracked in the single git root repository.
 

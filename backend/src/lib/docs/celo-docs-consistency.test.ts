@@ -58,7 +58,7 @@ const sourceFiles = [
     getExtraClaims: (isNew: boolean) => isNew
       ? [
           "Monorepo workspace",
-          "6c16a0b",
+          "45cdee4",
           "github-backend-6c16a0b-2026-06-14",
           "https://github.com/Nant361/langclaw-celo/commit/6c16a0b64f4fd3cc3e479a3c6196d25d80d52bd8",
         ]
