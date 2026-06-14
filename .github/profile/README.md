@@ -46,9 +46,9 @@ Live app: [langclawcelo.vercel.app](https://langclawcelo.vercel.app)
 | Self Agent ID | `133` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
 | Agent owner / recorder | `0x2cA915EF6be8D2D48ccD3c5dAF715546AF873A4c` |
-| Latest decision proof | Decision `#58`, signal `campaign-backend-proof`, tx `0xe0cc1aa4f3d952c09496142cb933640d2f433102681a120c8554351ac9db59b4` |
-| Latest decision proof run | `github-backend-6c16a0b-2026-06-14` |
-| Latest decision proof evidence | `https://github.com/Nant361/langclaw-celo/commit/6c16a0b64f4fd3cc3e479a3c6196d25d80d52bd8` |
+| Latest decision proof | Decision `#59`, signal `campaign-backend-proof`, tx `0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77` |
+| Latest decision proof run | `github-backend-45cdee4-2026-06-14` |
+| Latest decision proof evidence | `https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314` |
 | Latest Self-linked decision proof | Decision `#1`, signal `smart-money`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 The live Celo proof transactions above were rechecked in the

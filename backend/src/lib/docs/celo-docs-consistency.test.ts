@@ -44,8 +44,8 @@ const sourceFiles = [
     path: smartContractNotesPath,
     getExtraClaims: (isNew: boolean) => isNew
       ? [
-          "github-backend-6c16a0b-2026-06-14",
-          "https://github.com/Nant361/langclaw-celo/commit/6c16a0b64f4fd3cc3e479a3c6196d25d80d52bd8",
+          "github-backend-45cdee4-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
         ]
       : [
           "github-contracts-6a45563-2026-06-13",
@@ -59,8 +59,8 @@ const sourceFiles = [
       ? [
           "Monorepo workspace",
           "45cdee4",
-          "github-backend-6c16a0b-2026-06-14",
-          "https://github.com/Nant361/langclaw-celo/commit/6c16a0b64f4fd3cc3e479a3c6196d25d80d52bd8",
+          "github-backend-45cdee4-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
         ]
       : [
           "Monorepo workspace",
@@ -90,12 +90,12 @@ const expectedBaseClaims = [
 test("backend Celo runbook docs stay aligned on live proof claims", () => {
   for (const file of sourceFiles) {
     const source = readFileSync(file.path, "utf8");
-    const isNew = source.includes("Decision `#58`") || source.includes("decision `#58`") || source.includes("ERC-8004 decision 58");
+    const isNew = source.includes("Decision `#59`") || source.includes("decision `#59`") || source.includes("ERC-8004 decision 59");
 
     const versionClaims = isNew
       ? [
-          "0xe0cc1aa4f3d952c09496142cb933640d2f433102681a120c8554351ac9db59b4",
-          "Decision `#58`",
+          "0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77",
+          "Decision `#59`",
           "campaign-backend-proof",
         ]
       : [

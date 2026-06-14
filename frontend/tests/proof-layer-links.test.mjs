@@ -13,7 +13,7 @@ test("home proof layer links the current public decision examples", () => {
   const source = readFileSync(squigglyHomePath, "utf8");
 
   assert.ok(
-    source.includes("https://celoscan.io/tx/0xe0cc1aa4f3d952c09496142cb933640d2f433102681a120c8554351ac9db59b4"),
+    source.includes("https://celoscan.io/tx/0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77"),
     "Expected the home proof layer to link the latest ERC-8004 decision example."
   );
   assert.ok(
