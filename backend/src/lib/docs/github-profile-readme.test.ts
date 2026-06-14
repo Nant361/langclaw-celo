@@ -30,12 +30,12 @@ const expectedBaseClaims = [
 test("GitHub profile docs stay aligned with the live Celo proof story", () => {
   for (const filePath of [githubReadmePath, githubProfileReadmePath]) {
     const source = readFileSync(filePath, "utf8");
-    const isNew = source.includes("decision `#57`") || source.includes("Decision `#57`") || source.includes("decision `57`") || source.includes("decision #57");
+    const isNew = source.includes("decision `#58`") || source.includes("Decision `#58`") || source.includes("decision `58`") || source.includes("decision #58");
 
     const versionClaims = isNew
       ? [
-          "0x14264d9fa68c19e57b5664ef2330c3169ceb33eddad3e9d5640d9c4d8b99cdb9",
-          "github-frontend-1f50d27-2026-06-14",
+          "0xe0cc1aa4f3d952c09496142cb933640d2f433102681a120c8554351ac9db59b4",
+          "github-backend-6c16a0b-2026-06-14",
         ]
       : [
           "0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3",
