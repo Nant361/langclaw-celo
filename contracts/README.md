@@ -39,14 +39,14 @@ Current Celo proof examples:
 
 | Record | Agent | Signal / Status | Transaction |
 | --- | --- | --- | --- |
-| Registry decision `56` | ERC-8004 agent ID `9109` | `campaign-contracts-proof` | `0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3` |
+| Registry decision `57` | ERC-8004 agent ID `9109` | `campaign-backend-proof` | `0x14264d9fa68c19e57b5664ef2330c3169ceb33eddad3e9d5640d9c4d8b99cdb9` |
 | Registry decision `1` | Self Agent ID `133` | `smart-money` | `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 Latest ERC-8004 decision run:
 
-- `github-contracts-6a45563-2026-06-13`
+- `github-frontend-1f50d27-2026-06-14`
 - Evidence URI:
-  `https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1`
+  `https://github.com/Nant361/langclaw-celo/commit/1f50d27547e14fd730096dcb1eedce88938e6341`
 
 ## Deployed Mantle Contracts
 
@@ -60,16 +60,16 @@ Latest ERC-8004 decision run:
 
 - `LangclawRegistry`, `LangclawTradingJournal`, and the live Celo
   `LangclawUsageVault` are verified on Celoscan.
-- The latest proof references above were rechecked during the 2026-06-13
+- The latest proof references above were rechecked during the 2026-06-14
   backend eligibility and proof-readiness pass. If local audits report
   `missing git origin remote` for the checkouts, verify that the workspace root
   contains the remote origin with `git remote get-url origin`.
-- The latest registry write now remains the ERC-8004 decision `#56` for agent
+- The latest registry write now remains the ERC-8004 decision `#57` for agent
   `9109`, while the latest Self-linked proof example remains decision `#1` for
   agent `133`.
 - `cd ../backend && npm run check:celo-proof -- --json` now reports
-  `ready: true` with status `ready`, because the default proof path prefers the
-  ERC-8004 campaign agent `9109`.
+  `ready: true` with status `ready`, because the default proof path prefers
+  the ERC-8004 campaign agent `9109`.
 - Self Agent ID `133` remains documented for linked-proof and
   human-verification flows, not as the primary campaign proof writer.
 - The live Celo vault is the USDT-backed deployment at
