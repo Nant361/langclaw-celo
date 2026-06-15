@@ -23,6 +23,11 @@ const campaignProgressJune14Path = path.join(
   "docs",
   "CAMPAIGN_PROGRESS_2026-06-14.md"
 );
+const campaignProgressJune15Path = path.join(
+  backendRoot,
+  "docs",
+  "CAMPAIGN_PROGRESS_2026-06-15.md"
+);
 
 const sourceFiles = [
   { label: "README", path: readmePath },
@@ -44,12 +49,12 @@ const sourceFiles = [
     path: smartContractNotesPath,
     getExtraClaims: (isNew: boolean) => isNew
       ? [
-          "github-backend-45cdee4-2026-06-14",
-          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
+          "github-backend-42ba30a-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
         ]
       : [
-          "github-contracts-6a45563-2026-06-13",
-          "https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1",
+          "github-backend-45cdee4-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
         ],
   },
   {
@@ -58,15 +63,32 @@ const sourceFiles = [
     getExtraClaims: (isNew: boolean) => isNew
       ? [
           "Monorepo workspace",
-          "45cdee4",
-          "github-backend-45cdee4-2026-06-14",
-          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
+          "42ba30a",
+          "github-backend-42ba30a-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
         ]
       : [
           "Monorepo workspace",
-          "6a45563",
-          "github-contracts-6a45563-2026-06-13",
-          "https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1",
+          "45cdee4",
+          "github-backend-45cdee4-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
+        ],
+  },
+  {
+    label: "CAMPAIGN_PROGRESS_2026-06-15",
+    path: campaignProgressJune15Path,
+    getExtraClaims: (isNew: boolean) => isNew
+      ? [
+          "Monorepo workspace",
+          "7c4da9b",
+          "github-backend-42ba30a-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
+        ]
+      : [
+          "Monorepo workspace",
+          "45cdee4",
+          "github-backend-45cdee4-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
         ],
   },
 ];
@@ -90,18 +112,18 @@ const expectedBaseClaims = [
 test("backend Celo runbook docs stay aligned on live proof claims", () => {
   for (const file of sourceFiles) {
     const source = readFileSync(file.path, "utf8");
-    const isNew = source.includes("Decision `#59`") || source.includes("decision `#59`") || source.includes("ERC-8004 decision 59");
+    const isNew = source.includes("Decision `#60`") || source.includes("decision `#60`") || source.includes("ERC-8004 decision 60");
 
     const versionClaims = isNew
       ? [
-          "0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77",
-          "Decision `#59`",
+          "0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677",
+          "Decision `#60`",
           "campaign-backend-proof",
         ]
       : [
-          "0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3",
-          "Decision `#56`",
-          "campaign-contracts-proof",
+          "0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77",
+          "Decision `#59`",
+          "campaign-backend-proof",
         ];
 
     for (const claim of expectedBaseClaims) {

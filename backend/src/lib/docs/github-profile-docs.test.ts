@@ -38,22 +38,22 @@ for (const [label, filePath] of [
 ] as const) {
   test(`${label} stays aligned with live public Celo proof references`, () => {
     const source = readFileSync(filePath, "utf8");
-    const isNew = source.includes("decision `#59`") || source.includes("Decision `#59`") || source.includes("decision `59`") || source.includes("decision #59");
+    const isNew = source.includes("decision `#60`") || source.includes("Decision `#60`") || source.includes("decision `60`") || source.includes("decision #60");
 
     const versionClaims = isNew
       ? [
+          "0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677",
+          "campaign-backend-proof",
+          "github-backend-42ba30a-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
+          "2026-06-14 backend",
+        ]
+      : [
           "0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77",
           "campaign-backend-proof",
           "github-backend-45cdee4-2026-06-14",
           "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
           "2026-06-14 backend",
-        ]
-      : [
-          "0x2a885db5be7aa9553e0db14693ddf7e17b6898b5cc16246a62ad05f38136cae3",
-          "campaign-contracts-proof",
-          "github-contracts-6a45563-2026-06-13",
-          "https://github.com/Nant361/langclaw-celo/commit/6a455639853fd0d5d1492af2fb076169a4057ce1",
-          "2026-06-13 backend",
         ];
 
     for (const claim of expectedBaseClaims) {
