@@ -79,8 +79,8 @@ const deploymentRows = [
 
 const decisionRows = [
   {
-    href: "https://celoscan.io/tx/0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77",
-    label: "ERC-8004 decision 59",
+    href: "https://celoscan.io/tx/0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677",
+    label: "ERC-8004 decision 60",
     signal: "campaign-backend-proof",
   },
   {
