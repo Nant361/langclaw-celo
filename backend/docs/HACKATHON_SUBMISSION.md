@@ -72,7 +72,7 @@ decision record.
 | Langclaw Self Agent ID | `133` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
 | Agent owner / recorder | `0x2cA915EF6be8D2D48ccD3c5dAF715546AF873A4c` |
-| Latest recorded decision | Decision `#59`, signal `campaign-backend-proof`, agent `9109`, tx `0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77` |
+| Latest recorded decision | Decision `#60`, signal `campaign-backend-proof`, agent `9109`, tx `0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677` |
 | Latest Self-linked decision | Decision `#1`, signal `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 ## Submission Readiness
@@ -81,7 +81,7 @@ decision record.
 | --- | --- | --- |
 | Celo mainnet contracts | Ready | Registry, Trading Journal, and USDT Usage Vault have Celo bytecode and verified explorer source |
 | AI agent identity | Ready | ERC-8004 agent `9109`, Self Agent ID `133`, and verified registration transactions |
-| On-chain agent proof | Ready | Latest registry decision `#59` is readable on Celo for agent `9109`; latest Self-linked decision remains `#1` for agent `133` |
+| On-chain agent proof | Ready | Latest registry decision `#60` is readable on Celo for agent `9109`; latest Self-linked decision remains `#1` for agent `133` |
 | MiniPay support | Code ready, media capture pending | MiniPay detection, Celo mainnet path, and USDT usage credits exist in frontend |
 | Talent/App campaign ops | Manual follow-up | Project page, campaign enrollment, and leaderboard evidence must be confirmed outside the repo |
 | Reward claim | Manual follow-up | Project Leader must claim through MiniPay or the program fallback before the reward deadline |
