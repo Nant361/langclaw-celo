@@ -39,7 +39,7 @@ Current Celo proof examples:
 
 | Record | Agent | Signal / Status | Transaction |
 | --- | --- | --- | --- |
-| Registry decision `60` | ERC-8004 agent ID `9109` | `campaign-backend-proof` | `0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677` |
+| Registry decision `72` | ERC-8004 agent ID `9109` | `campaign-backend-proof` | `0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481` |
 | Registry decision `1` | Self Agent ID `133` | `smart-money` | `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 Latest ERC-8004 decision run:
