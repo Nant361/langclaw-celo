@@ -112,7 +112,7 @@ const sourceFiles = [
     getExtraClaims: (version: "72" | "60" | "59") => version === "72" || version === "60"
       ? [
           "Monorepo workspace",
-          "f431267",
+          "099b830",
           "github-backend-f852e02-2026-06-15",
           "https://github.com/Nant361/langclaw-celo/commit/f852e0249c2e7775236e5915d31ad4e29853ad1a",
         ]
