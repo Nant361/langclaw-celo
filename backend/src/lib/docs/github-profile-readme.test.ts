@@ -51,7 +51,7 @@ test("GitHub profile docs stay aligned with the live Celo proof story", () => {
       version === "72"
         ? [
             "0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481",
-            "github-backend-42ba30a-2026-06-14",
+            "github-backend-f852e02-2026-06-15",
           ]
         : version === "60"
         ? [
