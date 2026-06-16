@@ -241,8 +241,8 @@ Without journal config, Strategy Lab still returns backtest data and an honest
 | ERC-8004 registration tx | `0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3` |
 | Self Agent ID | `133` |
 | Self Agent ID tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
-| Latest decision proof | Decision `#60`, signal `campaign-backend-proof`, agent `9109` |
-| Latest decision proof tx | `0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677` |
+| Latest decision proof | Decision `#72`, signal `campaign-backend-proof`, agent `9109` |
+| Latest decision proof tx | `0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481` |
 | Latest decision proof run | `github-backend-42ba30a-2026-06-14` |
 | Latest decision proof evidence | `https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1` |
 | Latest Self-linked proof | Decision `#1`, signal `smart-money`, agent `133` |
