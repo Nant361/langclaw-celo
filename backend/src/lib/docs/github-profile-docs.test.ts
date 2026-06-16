@@ -62,7 +62,7 @@ for (const [label, filePath] of [
             "campaign-backend-proof",
             "github-backend-42ba30a-2026-06-14",
             "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
-            "2026-06-14 backend",
+            "2026-06-16 backend",
           ]
         : version === "60"
         ? [
