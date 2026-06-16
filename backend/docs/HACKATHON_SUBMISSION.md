@@ -81,7 +81,7 @@ decision record.
 | --- | --- | --- |
 | Celo mainnet contracts | Ready | Registry, Trading Journal, and USDT Usage Vault have Celo bytecode and verified explorer source |
 | AI agent identity | Ready | ERC-8004 agent `9109`, Self Agent ID `133`, and verified registration transactions |
-| On-chain agent proof | Ready | Latest registry decision `#60` is readable on Celo for agent `9109`; latest Self-linked decision remains `#1` for agent `133` |
+| On-chain agent proof | Ready | Latest registry decision `#72` is readable on Celo for agent `9109`; latest Self-linked decision remains `#1` for agent `133` |
 | MiniPay support | Code ready, media capture pending | MiniPay detection, Celo mainnet path, and USDT usage credits exist in frontend |
 | Talent/App campaign ops | Manual follow-up | Project page, campaign enrollment, and leaderboard evidence must be confirmed outside the repo |
 | Reward claim | Manual follow-up | Project Leader must claim through MiniPay or the program fallback before the reward deadline |

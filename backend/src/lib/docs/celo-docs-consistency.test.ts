@@ -50,6 +50,13 @@ const sourceFiles = [
   {
     label: "HACKATHON_SUBMISSION",
     path: hackathonSubmissionPath,
+    getExtraClaims: (version: "72" | "60" | "59") => [
+      version === "72"
+        ? "Latest registry decision `#72` is readable on Celo for agent `9109`"
+        : version === "60"
+        ? "Latest registry decision `#60` is readable on Celo for agent `9109`"
+        : "Latest registry decision `#59` is readable on Celo for agent `9109`",
+    ],
   },
   {
     label: "SMART_CONTRACT_TEAM_NOTES",
