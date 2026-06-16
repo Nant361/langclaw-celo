@@ -30,17 +30,38 @@ const expectedBaseClaims = [
 test("GitHub profile docs stay aligned with the live Celo proof story", () => {
   for (const filePath of [githubReadmePath, githubProfileReadmePath]) {
     const source = readFileSync(filePath, "utf8");
-    const isNew = source.includes("decision `#60`") || source.includes("Decision `#60`") || source.includes("decision `60`") || source.includes("decision #60");
+    let version: "72" | "60" | "59" = "59";
+    if (
+      source.includes("decision `#72`") ||
+      source.includes("Decision `#72`") ||
+      source.includes("decision `72`") ||
+      source.includes("decision #72")
+    ) {
+      version = "72";
+    } else if (
+      source.includes("decision `#60`") ||
+      source.includes("Decision `#60`") ||
+      source.includes("decision `60`") ||
+      source.includes("decision #60")
+    ) {
+      version = "60";
+    }
 
-    const versionClaims = isNew
-      ? [
-          "0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677",
-          "github-backend-42ba30a-2026-06-14",
-        ]
-      : [
-          "0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77",
-          "github-backend-45cdee4-2026-06-14",
-        ];
+    const versionClaims =
+      version === "72"
+        ? [
+            "0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481",
+            "github-backend-42ba30a-2026-06-14",
+          ]
+        : version === "60"
+        ? [
+            "0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677",
+            "github-backend-42ba30a-2026-06-14",
+          ]
+        : [
+            "0x67514654c1751b48506f3511ac42d463673520308612df8fc5e225cbf398ce77",
+            "github-backend-45cdee4-2026-06-14",
+          ];
 
     for (const claim of expectedBaseClaims) {
       assert.ok(source.includes(claim), `Expected ${filePath} to include base claim ${claim}`);
