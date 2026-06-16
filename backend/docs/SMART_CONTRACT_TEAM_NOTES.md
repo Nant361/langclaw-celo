@@ -39,7 +39,7 @@ Latest registry records:
 
 | Record | Meaning |
 | --- | --- |
-| Decision `#60`, `campaign-backend-proof`, agent `9109`, tx `0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677` | Latest Celo registry write as of 2026-06-14 |
+| Decision `#72`, `campaign-backend-proof`, agent `9109`, tx `0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481` | Latest Celo registry write as of 2026-06-14 |
 | Decision `#1`, `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` | Latest Self-linked proof example used in product demos |
 
 Latest ERC-8004 decision run:
