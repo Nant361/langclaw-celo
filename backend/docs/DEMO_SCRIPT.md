@@ -92,7 +92,7 @@ Show:
 Say:
 
 ```text
-For transparency, Langclaw builds an evidence bundle and records the agent decision hash through LangclawRegistry on Celo. The record includes the Self Agent ID, run ID, signal type, evidence URI, recorder, and timestamp.
+For transparency, Langclaw builds an evidence bundle and records the agent decision hash through LangclawRegistry on Celo. The current campaign proof uses ERC-8004 agent ID 9109, while Self Agent ID 133 remains available for linked proof. Each registry record includes the agent ID, run ID, signal type, evidence URI, recorder, and timestamp.
 ```
 
 Show:
@@ -100,13 +100,17 @@ Show:
 - Agent Decision Proof panel.
 - Proof Center at `/proofs`.
 - `decisionHash`.
-- `agentId = 133`.
-- Latest demo decision `#1`.
-- Self Agent ID `133`.
+- `agentId = 9109`.
+- Latest campaign decision `#72`.
 - ERC-8004 agent ID `9109`.
-- Celo proof tx
+- Campaign proof tx
+  `0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481`.
+- Self-linked decision `#1`.
+- Self Agent ID `133`.
+- Self-linked proof tx
   `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211`.
-- `signalType = smart-money` or `liquidity-anomaly`.
+- `signalType = campaign-backend-proof`, `smart-money`, or
+  `liquidity-anomaly`.
 - Strategy Proofs section for `LangclawTradingJournal`.
 - Telegram settings as the alert channel for monitor updates.
 

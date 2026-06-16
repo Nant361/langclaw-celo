@@ -11,6 +11,11 @@ const demoScriptPath = path.join(backendRoot, "docs", "DEMO_SCRIPT.md");
 const expectedClaims = [
   "Agent Decision Proof panel.",
   "Proof Center at `/proofs`.",
+  "current campaign proof uses ERC-8004 agent ID 9109",
+  "`agentId = 9109`.",
+  "Latest campaign decision `#72`.",
+  "0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481",
+  "Self-linked decision `#1`.",
   "Self Agent ID `133`.",
   "ERC-8004 agent ID `9109`.",
   "0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211",
