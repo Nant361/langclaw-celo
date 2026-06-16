@@ -56,8 +56,8 @@ test("contracts README stays aligned with live public Celo proof references", ()
       ? [
           "0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481",
           "campaign-backend-proof",
-          "github-backend-42ba30a-2026-06-14",
-          "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
+          "github-backend-f852e02-2026-06-15",
+          "https://github.com/Nant361/langclaw-celo/commit/f852e0249c2e7775236e5915d31ad4e29853ad1a",
         ]
       : version === "60"
       ? [
