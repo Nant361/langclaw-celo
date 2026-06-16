@@ -63,8 +63,9 @@ const sourceFiles = [
     path: smartContractNotesPath,
     getExtraClaims: (version: "72" | "60" | "59") => version === "72" || version === "60"
       ? [
-          "github-backend-42ba30a-2026-06-14",
-          "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
+          "Latest Celo registry write as of 2026-06-16",
+          "github-backend-f852e02-2026-06-15",
+          "https://github.com/Nant361/langclaw-celo/commit/f852e0249c2e7775236e5915d31ad4e29853ad1a",
         ]
       : [
           "github-backend-45cdee4-2026-06-14",
@@ -112,8 +113,8 @@ const sourceFiles = [
       ? [
           "Monorepo workspace",
           "f431267",
-          "github-backend-42ba30a-2026-06-14",
-          "https://github.com/Nant361/langclaw-celo/commit/42ba30abed2f79d898058c9cc8fcbff30df754d1",
+          "github-backend-f852e02-2026-06-15",
+          "https://github.com/Nant361/langclaw-celo/commit/f852e0249c2e7775236e5915d31ad4e29853ad1a",
         ]
       : [
           "Monorepo workspace",
