@@ -72,7 +72,7 @@ decision record.
 | Langclaw Self Agent ID | `133` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
 | Agent owner / recorder | `0x2cA915EF6be8D2D48ccD3c5dAF715546AF873A4c` |
-| Latest recorded decision | Decision `#60`, signal `campaign-backend-proof`, agent `9109`, tx `0x42de71d7afe5e2500a1369b49525ae57b04f2c8ca7e7f358ddc052b63ba27677` |
+| Latest recorded decision | Decision `#72`, signal `campaign-backend-proof`, agent `9109`, tx `0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481` |
 | Latest Self-linked decision | Decision `#1`, signal `smart-money`, agent `133`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 ## Submission Readiness
@@ -179,7 +179,7 @@ proof.
 3. It separates usable evidence from provider gaps instead of hiding missing
    sources.
 4. It records each AI decision hash on Celo through `LangclawRegistry`.
-5. The latest registry record is decision `#59`, `campaign-backend-proof`, for
+5. The latest registry record is decision `#72`, `campaign-backend-proof`, for
    ERC-8004 agent `9109`, while the latest Self-linked decision remains record
    `#1` for agent `133`.
 6. Strong signals can be saved to Alpha Watchlist, while Proof Center shows
