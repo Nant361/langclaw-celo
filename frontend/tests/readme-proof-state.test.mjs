@@ -17,7 +17,7 @@ test("frontend README documents the latest proof run and ready semantics", () =>
     "Expected the README to keep the latest ERC-8004 decision example."
   );
   assert.ok(
-    source.includes("github-backend-42ba30a-2026-06-14"),
+    source.includes("github-backend-f852e02-2026-06-15"),
     "Expected the README to include the current public proof run id."
   );
   assert.match(
