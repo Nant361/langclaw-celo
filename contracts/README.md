@@ -39,14 +39,14 @@ Current Celo proof examples:
 
 | Record | Agent | Signal / Status | Transaction |
 | --- | --- | --- | --- |
-| Registry decision `73` | ERC-8004 agent ID `9109` | `campaign-backend-proof` | `0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8` |
+| Registry decision `74` | ERC-8004 agent ID `9109` | `campaign-backend-proof` | `0x1d44f33f6713db5d03feb92e59a1ce94f41d547032b70c7c5dac09393b0c5b4e` |
 | Registry decision `1` | Self Agent ID `133` | `smart-money` | `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
 Latest ERC-8004 decision run:
 
-- `github-backend-e9f49eb-2026-06-16`
+- `github-backend-5a08a75-2026-06-16`
 - Evidence URI:
-  `https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e`
+  `https://github.com/Nant361/langclaw-celo/commit/5a08a75cefe8861852fbc01642fcc7ccfc5ddce4`
 
 ## Deployed Mantle Contracts
 
@@ -64,7 +64,7 @@ Latest ERC-8004 decision run:
   backend eligibility and proof-readiness pass. If local audits report
   `missing git origin remote` for the checkouts, verify that the workspace root
   contains the remote origin with `git remote get-url origin`.
-- The latest registry write now remains the ERC-8004 decision `#73` for agent
+- The latest registry write now remains the ERC-8004 decision `#74` for agent
   `9109`, while the latest Self-linked proof example remains decision `#1` for
   agent `133`.
 - `cd ../backend && npm run check:celo-proof -- --json` now reports
