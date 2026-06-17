@@ -101,10 +101,10 @@ Show:
 - Proof Center at `/proofs`.
 - `decisionHash`.
 - `agentId = 9109`.
-- Latest campaign decision `#72`.
+- Latest campaign decision `#73`.
 - ERC-8004 agent ID `9109`.
 - Campaign proof tx
-  `0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481`.
+  `0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8`.
 - Self-linked decision `#1`.
 - Self Agent ID `133`.
 - Self-linked proof tx
