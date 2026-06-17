@@ -30,14 +30,14 @@ const expectedBaseClaims = [
 test("GitHub profile docs stay aligned with the live Celo proof story", () => {
   for (const filePath of [githubReadmePath, githubProfileReadmePath]) {
     const source = readFileSync(filePath, "utf8");
-    let version: "73" | "72" | "60" | "59" = "59";
+    let version: "74" | "72" | "60" | "59" = "59";
     if (
-      source.includes("decision `#73`") ||
-      source.includes("Decision `#73`") ||
-      source.includes("decision `73`") ||
-      source.includes("decision #73")
+      source.includes("decision `#74`") ||
+      source.includes("Decision `#74`") ||
+      source.includes("decision `74`") ||
+      source.includes("decision #74")
     ) {
-      version = "73";
+      version = "74";
     } else if (
       source.includes("decision `#72`") ||
       source.includes("Decision `#72`") ||
@@ -55,10 +55,10 @@ test("GitHub profile docs stay aligned with the live Celo proof story", () => {
     }
 
     const versionClaims =
-      version === "73"
+      version === "74"
         ? [
-            "0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8",
-            "github-backend-e9f49eb-2026-06-16",
+            "0x1d44f33f6713db5d03feb92e59a1ce94f41d547032b70c7c5dac09393b0c5b4e",
+            "github-backend-5a08a75-2026-06-16",
           ]
         : version === "72"
         ? [

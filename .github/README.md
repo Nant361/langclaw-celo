@@ -52,12 +52,12 @@ https://langclawcelo.vercel.app
   `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6`.
 - Proof contracts: `LangclawRegistry`, `LangclawTradingJournal`, and
   `LangclawUsageVault` are deployed on Celo.
-- Latest documented Celo decision proof: decision `#73`,
+- Latest documented Celo decision proof: decision `#74`,
   signal `campaign-backend-proof`, tx
-  `0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8`.
+  `0x1d44f33f6713db5d03feb92e59a1ce94f41d547032b70c7c5dac09393b0c5b4e`.
 - Latest documented proof run:
-  `github-backend-e9f49eb-2026-06-16`, evidence
-  `https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e`.
+  `github-backend-5a08a75-2026-06-16`, evidence
+  `https://github.com/Nant361/langclaw-celo/commit/5a08a75cefe8861852fbc01642fcc7ccfc5ddce4`.
 - Latest documented Self-linked Celo decision proof: decision `#1`, signal
   `smart-money`, tx
   `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211`.
