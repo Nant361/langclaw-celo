@@ -241,10 +241,10 @@ Without journal config, Strategy Lab still returns backtest data and an honest
 | ERC-8004 registration tx | `0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3` |
 | Self Agent ID | `133` |
 | Self Agent ID tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
-| Latest decision proof | Decision `#72`, signal `campaign-backend-proof`, agent `9109` |
-| Latest decision proof tx | `0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481` |
-| Latest decision proof run | `github-backend-f852e02-2026-06-15` |
-| Latest decision proof evidence | `https://github.com/Nant361/langclaw-celo/commit/f852e0249c2e7775236e5915d31ad4e29853ad1a` |
+| Latest decision proof | Decision `#73`, signal `campaign-backend-proof`, agent `9109` |
+| Latest decision proof tx | `0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8` |
+| Latest decision proof run | `github-backend-e9f49eb-2026-06-16` |
+| Latest decision proof evidence | `https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e` |
 | Latest Self-linked proof | Decision `#1`, signal `smart-money`, agent `133` |
 | Latest Self-linked proof tx | `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
 
@@ -255,8 +255,8 @@ npm run check:eligibility
 npm run check:celo-proof
 ```
 
-As of the 2026-06-16 readiness check, `npm run check:celo-proof` reports
-`ready`. The latest registry decision is decision `#72`,
+As of the 2026-06-17 readiness check, `npm run check:celo-proof` reports
+`ready`. The latest registry decision is decision `#73`,
 `campaign-backend-proof`, for the configured ERC-8004 proof agent `9109`,
 while Self Agent ID `133` remains available for linked-proof flows. RPC
 connectivity, gas balance, and registry reads all passed.
