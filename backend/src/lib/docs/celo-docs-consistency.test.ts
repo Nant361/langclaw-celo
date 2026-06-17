@@ -33,6 +33,11 @@ const campaignProgressJune16Path = path.join(
   "docs",
   "CAMPAIGN_PROGRESS_2026-06-16.md"
 );
+const campaignProgressJune17Path = path.join(
+  backendRoot,
+  "docs",
+  "CAMPAIGN_PROGRESS_2026-06-17.md"
+);
 
 const sourceFiles = [
   { label: "README", path: readmePath },
@@ -125,6 +130,23 @@ const sourceFiles = [
           "099b830",
           "github-backend-f852e02-2026-06-15",
           "https://github.com/Nant361/langclaw-celo/commit/f852e0249c2e7775236e5915d31ad4e29853ad1a",
+        ]
+      : [
+          "Monorepo workspace",
+          "45cdee4",
+          "github-backend-45cdee4-2026-06-14",
+          "https://github.com/Nant361/langclaw-celo/commit/45cdee4fc982e96b6e1b85d4cc83798f647b6314",
+        ],
+  },
+  {
+    label: "CAMPAIGN_PROGRESS_2026-06-17",
+    path: campaignProgressJune17Path,
+    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
+      ? [
+          "Monorepo workspace",
+          "140d527",
+          "github-backend-e9f49eb-2026-06-16",
+          "https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e",
         ]
       : [
           "Monorepo workspace",
