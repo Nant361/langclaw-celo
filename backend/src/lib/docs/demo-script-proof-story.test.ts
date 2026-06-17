@@ -34,7 +34,7 @@ test("demo script keeps the shipped proof story and verification checklist", () 
     if (claim === "Latest campaign decision `#72`.") {
       assert.ok(
         source.includes("Latest campaign decision `#72`.") ||
-        source.includes("Latest campaign decision `#73`."),
+        source.includes("Latest campaign decision `#74`."),
         "Expected DEMO_SCRIPT.md to include campaign decision reference."
       );
       continue;
@@ -42,7 +42,7 @@ test("demo script keeps the shipped proof story and verification checklist", () 
     if (claim === "0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481") {
       assert.ok(
         source.includes("0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481") ||
-        source.includes("0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8"),
+        source.includes("0x1d44f33f6713db5d03feb92e59a1ce94f41d547032b70c7c5dac09393b0c5b4e"),
         "Expected DEMO_SCRIPT.md to include campaign decision tx hash."
       );
       continue;
