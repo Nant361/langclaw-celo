@@ -38,8 +38,15 @@ for (const [label, filePath] of [
 ] as const) {
   test(`${label} stays aligned with live public Celo proof references`, () => {
     const source = readFileSync(filePath, "utf8");
-    let version: "72" | "60" | "59" = "59";
+    let version: "73" | "72" | "60" | "59" = "59";
     if (
+      source.includes("decision `#73`") ||
+      source.includes("Decision `#73`") ||
+      source.includes("decision `73`") ||
+      source.includes("decision #73")
+    ) {
+      version = "73";
+    } else if (
       source.includes("decision `#72`") ||
       source.includes("Decision `#72`") ||
       source.includes("decision `72`") ||
@@ -56,7 +63,15 @@ for (const [label, filePath] of [
     }
 
     const versionClaims =
-      version === "72"
+      version === "73"
+        ? [
+            "0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8",
+            "campaign-backend-proof",
+            "github-backend-e9f49eb-2026-06-16",
+            "https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e",
+            "2026-06-17 backend",
+          ]
+        : version === "72"
         ? [
             "0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481",
             "campaign-backend-proof",

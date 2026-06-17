@@ -39,8 +39,10 @@ const sourceFiles = [
   {
     label: "CELO_ELIGIBILITY",
     path: eligibilityPath,
-    getExtraClaims: (version: "72" | "60" | "59") => [
-      version === "72"
+    getExtraClaims: (version: "73" | "72" | "60" | "59") => [
+      version === "73"
+        ? "2026-06-17 local eligibility and proof-readiness checks"
+        : version === "72"
         ? "2026-06-16 local eligibility and proof-readiness checks"
         : version === "60"
         ? "2026-06-14 local eligibility and proof-readiness checks"
@@ -50,8 +52,10 @@ const sourceFiles = [
   {
     label: "HACKATHON_SUBMISSION",
     path: hackathonSubmissionPath,
-    getExtraClaims: (version: "72" | "60" | "59") => [
-      version === "72"
+    getExtraClaims: (version: "73" | "72" | "60" | "59") => [
+      version === "73"
+        ? "Latest registry decision `#73` is readable on Celo for agent `9109`"
+        : version === "72"
         ? "Latest registry decision `#72` is readable on Celo for agent `9109`"
         : version === "60"
         ? "Latest registry decision `#60` is readable on Celo for agent `9109`"
@@ -61,7 +65,13 @@ const sourceFiles = [
   {
     label: "SMART_CONTRACT_TEAM_NOTES",
     path: smartContractNotesPath,
-    getExtraClaims: (version: "72" | "60" | "59") => version === "72" || version === "60"
+    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73"
+      ? [
+          "Latest Celo registry write as of 2026-06-17",
+          "github-backend-e9f49eb-2026-06-16",
+          "https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e",
+        ]
+      : version === "72" || version === "60"
       ? [
           "Latest Celo registry write as of 2026-06-16",
           "github-backend-f852e02-2026-06-15",
@@ -75,7 +85,7 @@ const sourceFiles = [
   {
     label: "CAMPAIGN_PROGRESS_2026-06-14",
     path: campaignProgressJune14Path,
-    getExtraClaims: (version: "72" | "60" | "59") => version === "72" || version === "60"
+    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
       ? [
           "Monorepo workspace",
           "42ba30a",
@@ -92,7 +102,7 @@ const sourceFiles = [
   {
     label: "CAMPAIGN_PROGRESS_2026-06-15",
     path: campaignProgressJune15Path,
-    getExtraClaims: (version: "72" | "60" | "59") => version === "72" || version === "60"
+    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
       ? [
           "Monorepo workspace",
           "7c4da9b",
@@ -109,7 +119,7 @@ const sourceFiles = [
   {
     label: "CAMPAIGN_PROGRESS_2026-06-16",
     path: campaignProgressJune16Path,
-    getExtraClaims: (version: "72" | "60" | "59") => version === "72" || version === "60"
+    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
       ? [
           "Monorepo workspace",
           "099b830",
@@ -144,8 +154,14 @@ const expectedBaseClaims = [
 test("backend Celo runbook docs stay aligned on live proof claims", () => {
   for (const file of sourceFiles) {
     const source = readFileSync(file.path, "utf8");
-    let version: "72" | "60" | "59" = "59";
+    let version: "73" | "72" | "60" | "59" = "59";
     if (
+      source.includes("Decision `#73`") ||
+      source.includes("decision `#73`") ||
+      source.includes("ERC-8004 decision 73")
+    ) {
+      version = "73";
+    } else if (
       source.includes("Decision `#72`") ||
       source.includes("decision `#72`") ||
       source.includes("ERC-8004 decision 72")
@@ -160,7 +176,13 @@ test("backend Celo runbook docs stay aligned on live proof claims", () => {
     }
 
     const versionClaims =
-      version === "72"
+      version === "73"
+        ? [
+            "0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8",
+            "Decision `#73`",
+            "campaign-backend-proof",
+          ]
+        : version === "72"
         ? [
             "0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481",
             "Decision `#72`",
