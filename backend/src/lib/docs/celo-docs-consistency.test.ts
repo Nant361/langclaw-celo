@@ -44,8 +44,8 @@ const sourceFiles = [
   {
     label: "CELO_ELIGIBILITY",
     path: eligibilityPath,
-    getExtraClaims: (version: "73" | "72" | "60" | "59") => [
-      version === "73"
+    getExtraClaims: (version: "74" | "72" | "60" | "59") => [
+      version === "74"
         ? "2026-06-17 local eligibility and proof-readiness checks"
         : version === "72"
         ? "2026-06-16 local eligibility and proof-readiness checks"
@@ -57,9 +57,9 @@ const sourceFiles = [
   {
     label: "HACKATHON_SUBMISSION",
     path: hackathonSubmissionPath,
-    getExtraClaims: (version: "73" | "72" | "60" | "59") => [
-      version === "73"
-        ? "Latest registry decision `#73` is readable on Celo for agent `9109`"
+    getExtraClaims: (version: "74" | "72" | "60" | "59") => [
+      version === "74"
+        ? "Latest registry decision `#74` is readable on Celo for agent `9109`"
         : version === "72"
         ? "Latest registry decision `#72` is readable on Celo for agent `9109`"
         : version === "60"
@@ -70,11 +70,11 @@ const sourceFiles = [
   {
     label: "SMART_CONTRACT_TEAM_NOTES",
     path: smartContractNotesPath,
-    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73"
+    getExtraClaims: (version: "74" | "72" | "60" | "59") => version === "74"
       ? [
           "Latest Celo registry write as of 2026-06-17",
-          "github-backend-e9f49eb-2026-06-16",
-          "https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e",
+          "github-backend-5a08a75-2026-06-16",
+          "https://github.com/Nant361/langclaw-celo/commit/5a08a75cefe8861852fbc01642fcc7ccfc5ddce4",
         ]
       : version === "72" || version === "60"
       ? [
@@ -90,7 +90,7 @@ const sourceFiles = [
   {
     label: "CAMPAIGN_PROGRESS_2026-06-14",
     path: campaignProgressJune14Path,
-    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
+    getExtraClaims: (version: "74" | "72" | "60" | "59") => version === "74" || version === "72" || version === "60"
       ? [
           "Monorepo workspace",
           "42ba30a",
@@ -107,7 +107,7 @@ const sourceFiles = [
   {
     label: "CAMPAIGN_PROGRESS_2026-06-15",
     path: campaignProgressJune15Path,
-    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
+    getExtraClaims: (version: "74" | "72" | "60" | "59") => version === "74" || version === "72" || version === "60"
       ? [
           "Monorepo workspace",
           "7c4da9b",
@@ -124,7 +124,7 @@ const sourceFiles = [
   {
     label: "CAMPAIGN_PROGRESS_2026-06-16",
     path: campaignProgressJune16Path,
-    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
+    getExtraClaims: (version: "74" | "72" | "60" | "59") => version === "74" || version === "72" || version === "60"
       ? [
           "Monorepo workspace",
           "099b830",
@@ -141,12 +141,12 @@ const sourceFiles = [
   {
     label: "CAMPAIGN_PROGRESS_2026-06-17",
     path: campaignProgressJune17Path,
-    getExtraClaims: (version: "73" | "72" | "60" | "59") => version === "73" || version === "72" || version === "60"
+    getExtraClaims: (version: "74" | "72" | "60" | "59") => version === "74" || version === "72" || version === "60"
       ? [
           "Monorepo workspace",
-          "140d527",
-          "github-backend-e9f49eb-2026-06-16",
-          "https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e",
+          "5a08a75",
+          "github-backend-5a08a75-2026-06-16",
+          "https://github.com/Nant361/langclaw-celo/commit/5a08a75cefe8861852fbc01642fcc7ccfc5ddce4",
         ]
       : [
           "Monorepo workspace",
@@ -176,13 +176,13 @@ const expectedBaseClaims = [
 test("backend Celo runbook docs stay aligned on live proof claims", () => {
   for (const file of sourceFiles) {
     const source = readFileSync(file.path, "utf8");
-    let version: "73" | "72" | "60" | "59" = "59";
+    let version: "74" | "72" | "60" | "59" = "59";
     if (
-      source.includes("Decision `#73`") ||
-      source.includes("decision `#73`") ||
-      source.includes("ERC-8004 decision 73")
+      source.includes("Decision `#74`") ||
+      source.includes("decision `#74`") ||
+      source.includes("ERC-8004 decision 74")
     ) {
-      version = "73";
+      version = "74";
     } else if (
       source.includes("Decision `#72`") ||
       source.includes("decision `#72`") ||
@@ -198,10 +198,10 @@ test("backend Celo runbook docs stay aligned on live proof claims", () => {
     }
 
     const versionClaims =
-      version === "73"
+      version === "74"
         ? [
-            "0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8",
-            "Decision `#73`",
+            "0x1d44f33f6713db5d03feb92e59a1ce94f41d547032b70c7c5dac09393b0c5b4e",
+            "Decision `#74`",
             "campaign-backend-proof",
           ]
         : version === "72"

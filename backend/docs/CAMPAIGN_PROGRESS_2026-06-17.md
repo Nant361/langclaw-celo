@@ -6,7 +6,7 @@ This snapshot records the local repo-visible Langclaw Celo campaign state after 
 
 | Scope | Branch | Head |
 | --- | --- | --- |
-| Monorepo workspace | `main` | `140d527` |
+| Monorepo workspace | `main` | `5a08a75` |
 
 The public campaign surfaces continue to be tracked in the single git root repository.
 
@@ -25,10 +25,10 @@ The public campaign surfaces continue to be tracked in the single git root repos
 | Self Agent ID | `133` |
 | ERC-8004 registration tx | `0x1b7cb74378db42551a3cbc81dcd560f337df1593d4ef1cd70ee44ff269bdc7f3` |
 | Self Agent ID registration tx | `0x3c7d0cc69f77d2aef5ab21bfe703d0f33f7037d5e2162209d78b23b5c3f1cde6` |
-| Latest ERC-8004 decision proof | Decision `#73`, signal `campaign-backend-proof`, tx `0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8` |
+| Latest ERC-8004 decision proof | Decision `#74`, signal `campaign-backend-proof`, tx `0x1d44f33f6713db5d03feb92e59a1ce94f41d547032b70c7c5dac09393b0c5b4e` |
 | Latest Self-linked decision proof | Decision `#1`, signal `smart-money`, tx `0x2a2f94c40e2b5c080bd330f43f3ce6bc6b05e054b6626ce3ab2716220f0d3211` |
-| Latest ERC-8004 proof run | `github-backend-e9f49eb-2026-06-16` |
-| Latest ERC-8004 proof evidence | `https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e` |
+| Latest ERC-8004 proof run | `github-backend-5a08a75-2026-06-16` |
+| Latest ERC-8004 proof evidence | `https://github.com/Nant361/langclaw-celo/commit/5a08a75cefe8861852fbc01642fcc7ccfc5ddce4` |
 
 ## Eligibility and Proof Readiness Status
 
@@ -38,5 +38,5 @@ The public campaign surfaces continue to be tracked in the single git root repos
 
 ## Correctness and Maintenance Completed
 
-- Refreshed Celo proof references in the monorepo to point correctly to decision `#73`.
+- Refreshed Celo proof references in the monorepo to point correctly to decision `#74`.
 - Verified that the backend, frontend, and smart contract verification pipelines remain fully functional.
