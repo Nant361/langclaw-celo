@@ -176,17 +176,17 @@ Celo agent identity:
 Latest ERC-8004 Celo decision proof:
 
 ```text
-Decision #72
+Decision #73
 Signal: campaign-backend-proof
 Agent: 9109
-Tx: 0xb52981a7282b5d48990c2d4bb69b313dbea74198f268b8a48b9cf72d56251481
+Tx: 0x11523c3a03d04332ea195ebfdeab4e2c2966fcf3a0816e5fabf62f94695edbe8
 ```
 
 Latest ERC-8004 proof run:
 
 ```text
-Run: github-backend-f852e02-2026-06-15
-Evidence: https://github.com/Nant361/langclaw-celo/commit/f852e0249c2e7775236e5915d31ad4e29853ad1a
+Run: github-backend-e9f49eb-2026-06-16
+Evidence: https://github.com/Nant361/langclaw-celo/commit/e9f49ebc3f67735330b5853d108e4089a3137b3e
 ```
 
 Latest Self-linked Celo decision proof:
